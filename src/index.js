@@ -1,3 +1,10 @@
+import express from 'express';
+import morgan from "morgan"
+import cors from 'cors'
+import path from 'path'
+import recetasRouter from './routes/recetas.routes' //productosRouter es un nombre que cambié de routes, no afecta en nada
+import './database'
+
 // crear una instancia express (express tiene que ser con minúscula)
 const  app = express();
 
