@@ -2,7 +2,8 @@ import express from 'express';
 import morgan from "morgan"
 import cors from 'cors'
 import path from 'path'
-import recetasRouter from './routes/recetas.routes' //productosRouter es un nombre que cambié de routes, no afecta en nada
+import recetasRouter from './routes/recetas.routes' 
+import usuariosRouter from './routes/usuarios.routes'
 import './database'
 
 // crear una instancia express (express tiene que ser con minúscula)
@@ -32,5 +33,5 @@ app.use(express.static(path.join(__dirname, '../public')))
 console.log(path.join(__dirname, '../public'))
 
 //rutas: nombre de dominio + ---- 
-app.use('/apirecetas', recetasRouter)
-// http://localhost:4000/
+app.use('/apirecetas', recetasRouter, usuariosRouter)
+

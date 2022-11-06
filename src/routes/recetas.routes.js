@@ -26,7 +26,7 @@ router
       check("dificultad")
         .notEmpty()
         .withMessage("La dificultad es un dato obligatorio")
-        .isIn(['&#9733;&#9734;&#9734;&#9734;&#9734;','&#9733;&#9733;&#9734;&#9734;&#9734;', '&#9733;&#9733;&#9733;&#9734;&#9734;', '&#9733;&#9733;&#9733;&#9733;&#9734;', '&#9733;&#9733;&#9733;&#9733;&#9733;'])
+        .isIn(['muy facil','facil','intermedio','dificil','experto'])
         .withMessage('La dificultad debe ser correcta'
         ),
       check('ingredientes')
@@ -80,7 +80,7 @@ router
       check("dificultad")
         .notEmpty()
         .withMessage("La dificultad es un dato obligatorio")
-        .isIn(['&#9733;&#9734;&#9734;&#9734;&#9734;','&#9733;&#9733;&#9734;&#9734;&#9734;', '&#9733;&#9733;&#9733;&#9734;&#9734;', '&#9733;&#9733;&#9733;&#9733;&#9734;', '&#9733;&#9733;&#9733;&#9733;&#9733;'])
+        .isIn(['muy facil','facil','intermedio','dificil','experto'])
         .withMessage('La dificultad debe ser correcta'
         ),
       check('ingredientes')
@@ -115,3 +115,11 @@ router
   .delete(borrarReceta);
 
 export default router;
+
+
+      // check("dificultad")
+      //   .notEmpty()
+      //   .withMessage("La dificultad es un dato obligatorio")
+      //   .isIn(["&#9733;&#9734;&#9734;&#9734;&#9734;","&#9733;&#9733;&#9734;&#9734;&#9734;", "&#9733;&#9733;&#9733;&#9734;&#9734;", "&#9733;&#9733;&#9733;&#9733;&#9734;", "&#9733;&#9733;&#9733;&#9733;&#9733;"])
+      //   .withMessage('La dificultad debe ser correcta'
+      //   ),

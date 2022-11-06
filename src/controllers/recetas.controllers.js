@@ -1,6 +1,7 @@
 import { validationResult } from "express-validator";
 import Receta from "../models/receta";
 
+
 export const listarRecetas = async(req, res) => {
     try {
         //buscar todas las recetas en la BD
@@ -101,3 +102,4 @@ export const borrarReceta = async (req, res)=>{
     })
   }
 }
+
