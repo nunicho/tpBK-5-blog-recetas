@@ -52,7 +52,7 @@ router
      check('apellido')
         .notEmpty()
         .withMessage("El apellido es un dato obligatorio")
-        .isLength({ min: 8, max: 50 })
+        .isLength({ min: 2, max: 50 })
         .withMessage("El apellido de tener entre 2 y 50 caracteres"
         ),
      check('mail')
