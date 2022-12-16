@@ -33,5 +33,6 @@ app.use(express.static(path.join(__dirname, '../public')))
 console.log(path.join(__dirname, '../public'))
 
 //rutas: nombre de dominio + ---- 
-app.use('/apirecetas', recetasRouter, usuariosRouter)
+app.use('/apirecetas/re', recetasRouter)
+app.use('/apirecetas/us', usuariosRouter)
 
